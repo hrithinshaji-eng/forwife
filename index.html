@@ -136,7 +136,7 @@ p{margin:0;line-height:1.6;font-size:1.02rem}
     <svg class="big" viewBox="0 0 24 24"><use href="#hh"/></svg>
     <h2 class="msg" id="q3e">Where do you want to kiss me?</h2>
     <div class="row" id="kissMeOpts">
-      <button class="gbtn sm" data-gif="Lipkiss_2.gif">Lips</button>
+      <button class="gbtn sm" data-gif="lipkiss_2.gif">Lips</button>
       <button class="gbtn sm" data-gif="lollipopkiss.gif">Lollipop</button>
     </div>
     <img id="gif3e" alt="" style="max-width:82%;max-height:200px;border-radius:20px;display:none;margin-top:.4rem">
@@ -390,7 +390,7 @@ document.querySelectorAll('#sureOpts button').forEach(x=>x.addEventListener('cli
 n3h.addEventListener('click',()=>go('s3i'));
 /* Screen 3i: Punish me */
 const punishOpts=$('#punishOpts'),gif3i=$('#gif3i'),q3i=$('#q3i'),n3i=$('#n3i');
-function pick3i(src){punishOpts.style.opacity=0;setTimeout(()=>{punishOpts.style.display='none';gif3i.src=src;gif3i.style.display='block';q3i.style.opacity=0;setTimeout(()=>{q3i.textContent='You make me feel safe... 💗';q3i.style.opacity=1;n3i.hidden=false},450)},450)}
+function pick3i(src){punishOpts.style.opacity=0;setTimeout(()=>{punishOpts.style.display='none';gif3i.src=src;gif3i.style.display='block';q3i.style.opacity=0;setTimeout(()=>{q3i.textContent='Its ok if you punish me like this 💗';q3i.style.opacity=1;n3i.hidden=false},450)},450)}
 document.querySelectorAll('#punishOpts button').forEach(x=>x.addEventListener('click',()=>pick3i(x.dataset.gif)));
 n3i.addEventListener('click',()=>go('s3j'));
 /* Screen 3j: Something something */
