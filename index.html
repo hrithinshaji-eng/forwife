@@ -376,7 +376,7 @@ document.querySelectorAll('#babyOpts button').forEach(x=>x.addEventListener('cli
 n3f.addEventListener('click',()=>go('s3g'));
 /* Screen 3g: F*ck or Fight */
 const moodOpts=$('#moodOpts'),gif3g=$('#gif3g'),q3g=$('#q3g'),n3g=$('#n3g');
-const reply3g={fck:'As you wish... 😏',fight:'Let me take you on... 💕'};
+const reply3g={fck:'As you wish... me too',fight:'Let me take you on... 💕'};
 function pick3g(src,reply){moodOpts.style.opacity=0;setTimeout(()=>{moodOpts.style.display='none';gif3g.src=src;gif3g.style.display='block';q3g.style.opacity=0;setTimeout(()=>{q3g.textContent=reply;q3g.style.opacity=1;n3g.hidden=false},450)},450)}
 document.querySelectorAll('#moodOpts button').forEach(x=>x.addEventListener('click',()=>{
   const gifName=x.dataset.gif.replace('.gif','');
